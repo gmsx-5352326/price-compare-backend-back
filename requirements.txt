@@ -1,0 +1,6 @@
+# 依赖清单（一键安装所有包）
+flask
+requests
+beautifulsoup4
+supabase
+python-dotenv
