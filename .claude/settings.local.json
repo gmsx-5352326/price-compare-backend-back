@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"http://127.0.0.1:5000/api/jd/search?keyword=test\")",
+      "Bash(python -c \"import sys,json;d=json.load\\(sys.stdin\\);print\\('1:', d.get\\('error','ok'\\)\\)\")",
+      "Bash(python -c \"import sys,json;d=json.load\\(sys.stdin\\);print\\('2:', d.get\\('error','ok'\\)\\)\")",
+      "Bash(wait)",
+      "Bash(curl -s http://127.0.0.1:5000/)",
+      "Bash(curl -s --connect-timeout 3 http://127.0.0.1:7890)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(curl -v --proxy http://127.0.0.1:7890 https://p.3.cn/prices/mgets?skuIds=J_100016125384)",
+      "Bash(curl -s \"http://127.0.0.1:5000/api/jd/search?keyword=%E9%BC%A0%E6%A0%87&page=1\")",
+      "Bash(python -c ' *)",
+      "Bash(curl -s --max-time 10 \"https://p.3.cn/prices/mgets?skuIds=J_100253139047&type=1\")",
+      "Bash(nslookup p.3.cn)",
+      "Bash(ping -n 1 p.3.cn)",
+      "Bash(grep -r \"HTTP_PROXY\\\\|HTTPS_PROXY\\\\|http_proxy\\\\|https_proxy\" /c/Users/阴阳内外/ --include=\"*.json\" --include=\"*.yaml\" --include=\"*.yml\" --include=\"*.conf\" --include=\"*.env\" --include=\"*.ini\" 2>/dev/null | head -10)",
+      "Read(//c/Users/阴阳内外//**)",
+      "Bash(curl -s --max-time 3 http://localhost:8080)",
+      "Bash(curl -s --max-time 5 \"http://localhost:8080/api/jd/search?keyword=test&page=1\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('ok:', d.get\\('ok'\\), 'products:', len\\(d.get\\('products',[]\\)\\), 'error:', d.get\\('error',''\\)\\)\")",
+      "Bash(curl -s --max-time 10 \"http://localhost:8080/api/jd/reload-cookies\" -X POST)",
+      "Bash(npx vue-cli-service *)",
+      "Bash(curl -s --max-time 180 \"http://127.0.0.1:5000/api/jd/search-drission?keyword=%E9%BC%A0%E6%A0%87&pages=1\")",
+      "Bash(python -c \"from jd.jd_pc import search; print\\('import ok'\\)\")",
+      "Bash(python -c \"from app import app; rules = [r.rule for r in app.url_map.iter_rules\\(\\) if not r.rule.startswith\\('/static'\\)]; print\\('\\\\n'.join\\(sorted\\(rules\\)\\)\\)\")",
+      "Bash(python -c \"from jd.jd_pc import search; print\\('OK'\\)\")",
+      "Bash(netstat -ano)",
+      "Bash(tasklist)"
+    ]
+  }
+}

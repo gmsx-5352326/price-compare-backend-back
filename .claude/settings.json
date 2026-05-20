@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(kill 1724)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('ok:', d.get\\('ok'\\), '| blocked:', d.get\\('blocked'\\), '| products:', len\\(d.get\\('products',[]\\)\\), '| render:', d.get\\('render_source',''\\)\\); [print\\(f'  {p[\\\\\"sku\\\\\"]}: price={repr\\(p.get\\(\\\\\"price\\\\\",\\\\\"\\\\\"\\)\\)} title={p[\\\\\"title\\\\\"][:40]}'\\) for p in d.get\\('products',[]\\)[:5]]\")",
+      "Bash(python _debug_price.py)",
+      "Bash(pkill -f \"python app.py\")",
+      "Bash(python -c \"from crawler.jd_search import search_keyword, search_with_pool, _try_playwright_search; print\\('All imports OK'\\)\")"
+    ]
+  }
+}
