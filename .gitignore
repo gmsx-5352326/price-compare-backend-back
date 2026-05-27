@@ -47,3 +47,9 @@ cookies.txt
 
 # DrissionPage profile
 .drission-profile/
+
+# Large files that shouldn't be committed
+**/node_modules/
+**/node.exe
+**/*.exe
+**/Lib/site-packages/**
