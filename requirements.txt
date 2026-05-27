@@ -1,0 +1,14 @@
+# 依赖清单（一键安装所有包）
+flask
+requests
+beautifulsoup4
+supabase
+python-dotenv
+# DrissionPage: 浏览器自动化，支持连接已打开的 Chrome，无需 WebDriver
+DrissionPage>=4.0.0
+# 京东新版搜索为前端渲染，纯 requests 常得到空列表；需要列表时请执行 playwright install chromium
+playwright>=1.40.0
+# TLS 指纹伪装：模拟 Chrome 浏览器的 JA3 指纹，降低被京东风控识别的概率
+curl_cffi>=0.6.0
+# 用于AI分析
+openai>=1.0.0
